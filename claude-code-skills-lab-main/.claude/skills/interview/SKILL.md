@@ -6,7 +6,7 @@ description: |
 
 # Interview Skill
 
-Prevent building the wrong thing. Discover user's intent (WHY), validate assumptions, and agree on approach (WHAT) before taking action.
+Prevent building the wrong thing. Discover user's intent (WHY), validate assumptions, and agree on approach (WHAT) before taking action.Use askuserQuestion tool to ask clarifing question. 
 
 ## What This Skill Does
 
