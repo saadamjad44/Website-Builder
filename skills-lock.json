@@ -6,6 +6,11 @@
       "sourceType": "github",
       "computedHash": "e01516e24ba086a603fdf753f9b4e428a3684fbf3010b9295352202fd3461fa8"
     },
+    "award-winning-website": {
+      "source": "eng0ai/eng0-template-skills",
+      "sourceType": "github",
+      "computedHash": "9ca5507def1b2c8eca8ab0110778cb876e8261e2e24338a42588266c3636a6a1"
+    },
     "designing-beautiful-websites": {
       "source": "tristanmanchester/agent-skills",
       "sourceType": "github",
@@ -21,10 +26,30 @@
       "sourceType": "github",
       "computedHash": "516bd2154eb843a8240e43d5b285229129853114ad7075a5e141e1c08e408c84"
     },
+    "fullstack-guardian": {
+      "source": "jeffallan/claude-skills",
+      "sourceType": "github",
+      "computedHash": "c331d7561e99c1973df4f9f948ce0a78962a8c4d58f29a9ef4da16e6b40546d4"
+    },
+    "geo-content-optimizer": {
+      "source": "aaron-he-zhu/seo-geo-claude-skills",
+      "sourceType": "github",
+      "computedHash": "bf11a3f6aee62bf9622d2d5c17a6231e6d23853c3f2ae0579775fe8e7aa393f6"
+    },
     "modern-web-design": {
       "source": "freshtechbro/claudedesignskills",
       "sourceType": "github",
       "computedHash": "89af96893e4a67c5aa6d77791d077ce9af577a59ddc280e26e882d7c8b563dc6"
+    },
+    "senior-fullstack": {
+      "source": "davila7/claude-code-templates",
+      "sourceType": "github",
+      "computedHash": "f5e896578aa49e4d9b573c9950336cada44821bf7a1d4771b547c05bf2e42449"
+    },
+    "seo-content-writer": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "f0fe96267cacf46daaac6f34c465ed9dadd804f697e6f7d3cdac45c0fe59ee47"
     }
   }
 }
