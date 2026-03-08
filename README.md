@@ -1,204 +1,176 @@
-# Frontend Developer Portfolio
+# Professional Website Builder
 
-A creative, modern portfolio website built with vanilla HTML, CSS, and JavaScript. Designed to showcase frontend development skills and attract freelance clients.
+A self-contained platform that orchestrates Claude Code agents and specialized skills to create **high-quality, production-grade websites** with minimal manual effort. Built on the Spec Driven Development (SDD) methodology.
 
-## 🎯 Project Status
+## 🎯 Vision & Mission
 
-**Version 1.0**: ✅ Production-ready (Core portfolio complete)
-**Version 2.0**: 📋 Enhancement plan ready (AI features, SEO, analytics, engagement)
+Empower anyone to build professional websites by leveraging AI-powered agents and a curated library of reusable skills. The system is **extensible**, **disciplined**, and **user-centric**, delivering polished results through a structured development lifecycle.
 
-**Last Updated**: 2026-03-07
+**Last Updated**: 2026-03-08
 
-## Features
+## 🚀 Core Capabilities
 
-### v1.0 (Current - Production Ready)
-- **Responsive Design** - Mobile-first approach, works on all devices
-- **Smooth Animations** - Scroll-triggered animations using Intersection Observer
-- **Project Filtering** - Interactive filtering by category
-- **Contact Form** - Validated form with Formspree integration
-- **Testimonials Carousel** - Auto-rotating client testimonials
-- **Accessible** - Semantic HTML, keyboard navigation, WCAG compliant
-- **Fast Performance** - No frameworks, optimized vanilla JavaScript
+- **Automated Discovery** - Interview agent captures requirements, UI/UX preferences, and technical constraints
+- **Spec-Driven Development** - Generate comprehensive specifications before writing code
+- **Multi-Skill Orchestration** - Coordinate specialized skills for design, development, content, and optimization
+- **Quality Assurance** - Built-in code review, simplification, and performance optimization
+- **Production Ready** - Generate deployment-ready code with CI/CD pipelines
 
-### v2.0 (Enhancement Plan - 172 hours)
-- 🎯 **Clear Value Proposition** - Hero with stats and social proof
-- 🤖 **AI Chatbot Assistant** - Answers questions about your work
-- 📄 **AI Resume Generator** - Tailored to different job roles
-- 📝 **Case Studies** - Detailed project stories with results
-- 🌓 **Dark Mode** - System preference + manual toggle
-- 🔍 **Advanced Search & Filtering** - Multiple categories, sort options
-- 📰 **Blog Section** - Content marketing for SEO
-- 📊 **Analytics** - Track user behavior and conversions
-- 🔎 **Comprehensive SEO** - Meta tags, Schema.org, sitemap
-- 📞 **Multiple Contact Options** - Email, phone, WhatsApp, calendar booking
+## 🛠️ Available Skills
 
-See [enhancement-plan-2026.md](docs/enhancement-plan-2026.md) for complete details.
+### Design & UI/UX
+- **`designing-beautiful-websites`** - UX strategy, information architecture, wireframes, UI systems, and visual design
+- **`frontend-design`** - Production-grade frontend interfaces with high design quality
+- **`frontend-responsive-design-standards`** - Mobile-first, responsive layouts across all screen sizes
+- **`modern-web-design`** - 2024-2025 design trends, micro-interactions, and performance-first interfaces
+- **`award-winning-website`** - Gaming landing pages with GSAP scroll animations, 3D effects, and video storytelling
 
-## Tech Stack
+### Development
+- **`senior-fullstack`** - Comprehensive fullstack development with React, Next.js, Node.js, GraphQL, PostgreSQL
+- **`fullstack-guardian`** - Security-focused full-stack applications with layered security at every level
+- **`claude-api`** - Build applications using Claude API and Anthropic SDK
 
-- HTML5
-- CSS3 (Custom Properties, Grid, Flexbox)
-- Vanilla JavaScript (ES6 Modules)
-- Formspree (Contact form backend)
+### Content & SEO
+- **`seo-content-writer`** - SEO-optimized content creation following best practices
+- **`geo-content-optimizer`** - Optimize content for AI citation (ChatGPT, Perplexity, Google AI Overviews)
 
-## 📚 Documentation
+### Utilities
+- **`simplify`** - Review code for reuse, quality, and efficiency
+- **`keybindings-help`** - Customize keyboard shortcuts and keybindings
+- **`browsing-with-playwright`** - Search and download images for websites
+- **`loop`** - Run prompts on recurring intervals
+- **`find-skills`** - Discover and install additional agent skills
 
-### Core Documentation (v1.0)
-- **[requirements.md](docs/requirements.md)** - Project requirements and specifications
-- **[architecture.md](docs/architecture.md)** - System architecture with 6 ADRs
-- **[design-spec.md](docs/design-spec.md)** - Complete UI/UX design specifications
-- **[review-report.md](docs/review-report.md)** - Code quality review and optimizations
-- **[deployment-guide.md](docs/deployment-guide.md)** - Deployment instructions for multiple platforms
-- **[project-summary.md](docs/project-summary.md)** - Original project summary
+## 📋 Spec Driven Development (SDD) Process
 
-### Enhancement Documentation (v2.0)
-- **[enhancement-plan-2026.md](docs/enhancement-plan-2026.md)** - Strategic improvements for 2026
-- **[implementation-roadmap.md](docs/implementation-roadmap.md)** - 6-sprint execution plan (172 hours)
-- **[feedback-response.md](docs/feedback-response.md)** - Comprehensive feedback analysis
-- **[COMPLETE-OVERVIEW.md](docs/COMPLETE-OVERVIEW.md)** - ⭐ **START HERE** - Complete project overview
+| Phase | Goal | Skills Used |
+|-------|------|-------------|
+| **Spec Creation** | Draft comprehensive website specification covering requirements, layout, functionality, content strategy, and SEO/GEO optimization | `designing-beautiful-websites`, `seo-content-writer`, `geo-content-optimizer`, `senior-fullstack` |
+| **Spec Approval** | Review and approve specification before code generation | — |
+| **Implementation** | Generate production code using specialized skills | `fullstack-guardian`, `award-winning-website`, `frontend-design`, `frontend-responsive-design-standards`, `modern-web-design` |
+| **Review** | Code quality review, simplification, and performance benchmarking | `simplify` |
+| **Deploy** | Build production bundles and publish to hosting platforms | — |
+
+Each phase is gated by tasks in the internal task list. No phase starts until the preceding task is marked **completed**.
+
+## 🏗️ Architecture
+
+- **Orchestrator (Claude Code)** - Runs plan-mode, task-list, worktree isolation; invokes skills via the `Skill` tool
+- **Interview Agent** - Captures functional, non-functional, and UI/UX requirements in discovery mode
+- **Skill Library** - Single-responsibility skills that are versioned, discoverable, and reusable
+- **SDD Engine** - Enforces methodology; stores artifacts in `docs/` (constitution, ADRs, spec.md) and `src/` (code)
+
+Each website project lives in its own folder with a corresponding `spec.md` containing full build instructions.
 
 ## 🚀 Quick Start
 
-### Option 1: Deploy Current Version (v1.0)
-The portfolio is production-ready and can be deployed immediately:
+### Prerequisites
+- Claude Code CLI installed
+- Git repository initialized
+- Required skills installed (see Adoption Checklist)
 
-1. Customize content in `src/index.html`
-2. Add your images to `src/assets/images/`
-3. Configure Formspree form ID
-4. Deploy to Netlify/Vercel/GitHub Pages
+### Basic Workflow
 
-See [deployment-guide.md](docs/deployment-guide.md) for detailed instructions.
+1. **Run Interview Agent** to capture requirements
+   ```
+   Use the interview skill to gather project requirements
+   ```
 
-### Option 2: Implement Enhancements (v2.0)
-Transform the portfolio with modern 2026 features:
+2. **Generate Specification**
+   ```
+   Create spec.md using designing-beautiful-websites, seo-content-writer,
+   geo-content-optimizer, and senior-fullstack skills
+   ```
 
-1. Review [COMPLETE-OVERVIEW.md](docs/COMPLETE-OVERVIEW.md)
-2. Choose implementation option (MVP, Full, or Hybrid)
-3. Follow [implementation-roadmap.md](docs/implementation-roadmap.md)
+3. **Approve Specification**
+   ```
+   Review and approve the spec.md before implementation
+   ```
 
-**Recommended**: Start with MVP (2 weeks, 46 hours) then iterate.
+4. **Implement Website**
+   ```
+   Generate code using appropriate skills based on project type
+   ```
+
+5. **Review & Optimize**
+   ```
+   Run simplify skill and perform manual review
+   ```
+
+6. **Deploy**
+   ```
+   Build and publish to hosting platform
+   ```
+
+## 📁 Project Structure
 
 ```
-src/
-├── index.html          # Main HTML file
-├── css/
-│   ├── base.css        # Reset, variables, typography
-│   ├── layout.css      # Grid, containers, spacing
-│   ├── components.css  # Reusable UI components
-│   ├── animations.css  # Keyframes, transitions
-│   └── main.css        # Import orchestrator
-├── js/
-│   ├── main.js         # App initialization
-│   ├── nav.js          # Navigation & mobile menu
-│   ├── filter.js       # Project filtering
-│   ├── form.js         # Contact form validation
-│   ├── scroll.js       # Scroll animations
-│   └── carousel.js     # Testimonials carousel
-└── assets/
-    ├── images/         # Project images, profile photo
-    └── icons/          # SVG icons
+Website-Builder/
+├── CLAUDE.md                    # Project constitution and instructions
+├── README.md                    # This file
+├── docs/                        # Documentation, ADRs, specifications
+├── .claude/
+│   └── skills/                  # Installed Claude Code skills
+│       ├── award-winning-website/
+│       ├── designing-beautiful-websites/
+│       ├── frontend-design/
+│       ├── frontend-responsive-design-standards/
+│       ├── fullstack-guardian/
+│       ├── geo-content-optimizer/
+│       ├── modern-web-design/
+│       ├── senior-fullstack/
+│       └── seo-content-writer/
+└── [project-folders]/           # Individual website projects
+    └── spec.md                  # Project specification
 ```
 
-## Setup Instructions
+## 📚 Documentation
 
-1. **Clone or download** this repository
+- **[CLAUDE.md](CLAUDE.md)** - Project constitution, governance, and SDD methodology
+- **[skills-lock.json](skills-lock.json)** - Installed skills registry
 
-2. **Update content** in `index.html`:
-   - Replace "Alex Morgan" with your name
-   - Update the hero section with your tagline
-   - Add your profile image to `assets/images/profile.jpg`
-   - Update project cards with your actual projects
-   - Add project images to `assets/images/`
-   - Update experience timeline with your work history
-   - Update skills section with your technologies
+## ✅ Adoption Checklist
 
-3. **Configure contact form**:
-   - Sign up at [Formspree](https://formspree.io/)
-   - Replace `YOUR_FORM_ID` in the form action URL (line 283 of index.html)
-   - Or use Netlify Forms by adding `netlify` attribute to the form
+- [ ] Install Claude Code CLI and enable required hooks
+- [ ] Add core skills:
+  - `frontend-design`
+  - `frontend-responsive-design-standards`
+  - `modern-web-design`
+  - `simplify`
+  - `designing-beautiful-websites`
+  - `award-winning-website`
+  - `fullstack-guardian`
+  - `senior-fullstack`
+  - `seo-content-writer`
+  - `geo-content-optimizer`
+- [ ] Run Interview Agent to capture initial requirements
+- [ ] Follow SDD phases, creating a task for each
+- [ ] Review and sign-off constitution
 
-4. **Update social links** in the footer:
-   - Replace placeholder URLs with your actual social media profiles
+## 🎯 Use Cases
 
-5. **Add Google Fonts** (optional):
-   - The template uses Inter and Space Grotesk from Google Fonts
-   - These are already linked in the HTML head
+- **Landing Pages** - High-converting marketing pages with modern design
+- **Gaming Websites** - Interactive experiences with GSAP animations and 3D effects
+- **Full-Stack Applications** - Secure web apps with frontend and backend
+- **Content Websites** - SEO-optimized sites that rank in search and AI systems
+- **Portfolio Sites** - Professional portfolios showcasing work and skills
+- **Business Websites** - Corporate sites with responsive design and accessibility
 
-## Deployment
+## 🔮 Future Roadmap
 
-### Option 1: Netlify (Recommended)
+1. **Skill Marketplace** - Community-published skills for animation, analytics, etc.
+2. **Multi-Domain Support** - Mobile web design and e-commerce extensions
+3. **AI-Driven Analytics** - Automated performance and accessibility assessments
+4. **Content Strategy** - AI-first content that ranks and gets cited by AI systems
 
-1. Push your code to GitHub
-2. Go to [Netlify](https://netlify.com)
-3. Click "New site from Git"
-4. Select your repository
-5. Set publish directory to `src`
-6. Deploy!
+## 🤝 Contributing
 
-### Option 2: Vercel
+All changes must follow the SDD process and be recorded as ADRs. See [CLAUDE.md](CLAUDE.md) for governance and contributor guidelines.
 
-1. Push your code to GitHub
-2. Go to [Vercel](https://vercel.com)
-3. Import your repository
-4. Set root directory to `src`
-5. Deploy!
+## 📄 License
 
-### Option 3: GitHub Pages
+MIT License - feel free to use and extend this platform!
 
-1. Push your code to GitHub
-2. Go to repository Settings > Pages
-3. Select branch and `/src` folder
-4. Save and wait for deployment
+## 🙏 Credits
 
-## Customization
-
-### Colors
-
-Edit CSS variables in `src/css/base.css`:
-
-```css
---color-primary-600: #2563eb;  /* Main accent color */
---text-primary: #1c1917;       /* Main text color */
---bg-primary: #ffffff;         /* Background color */
-```
-
-### Typography
-
-Change fonts in `src/css/base.css`:
-
-```css
---font-display: 'Your Display Font', sans-serif;
---font-body: 'Your Body Font', sans-serif;
-```
-
-### Spacing
-
-Adjust spacing scale in `src/css/base.css`:
-
-```css
---space-4: 16px;
---space-8: 32px;
-/* etc. */
-```
-
-## Browser Support
-
-- Chrome (last 2 versions)
-- Firefox (last 2 versions)
-- Safari (last 2 versions)
-- Edge (last 2 versions)
-
-## Performance
-
-- Lighthouse Score: 95+
-- First Contentful Paint: < 1.5s
-- Time to Interactive: < 3s
-- Total Bundle Size: < 500KB
-
-## License
-
-MIT License - feel free to use this template for your own portfolio!
-
-## Credits
-
-Built following the SDD (Software Design & Development) methodology as part of the Professional Website Builder project.
+Built with Claude Code and powered by Claude Opus 4.6. Follows the Spec Driven Development (SDD) methodology for disciplined, high-quality website creation.
