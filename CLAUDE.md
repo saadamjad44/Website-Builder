@@ -80,6 +80,86 @@ Each phase is gated by a **Task** in the internal task list; no later phase star
 ## 16. Skill Library
 - **Core Skills**: `backend-architect`, `database-designer`, `realtime-engineer`, `security-engineer`, `devops-engineer`, `api-designer`, `analytics-engineer`, `saas-architect`, `frontend-design`, `frontend-responsive-design-standards`, `modern-web-design`, `keybindings-help`, `simplify`, `claude-api`, `designing-beautiful-websites`, `award-winning-website`, `fullstack-guardian`, `geo-content-optimizer`, `senior-fullstack`, `seo-content-writer`.
 
+### 16.1 Simple Website Development (HTML, CSS, JS)
+For creating simple, lightweight websites without frameworks:
+
+**Technology Stack:**
+- Pure HTML5 for semantic structure
+- Vanilla CSS3 for styling (no preprocessors required)
+- Vanilla JavaScript (ES6+) for interactivity
+- No build tools or bundlers required for basic sites
+
+**HTML Best Practices:**
+- Use semantic elements: `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`
+- Include proper meta tags: charset, viewport, description
+- Maintain proper heading hierarchy (h1-h6)
+- Add `alt` attributes to all images
+- Use `<button>` for actions, `<a>` for navigation
+- Ensure all form inputs have associated `<label>` elements
+
+**CSS Guidelines:**
+- Use CSS custom properties (variables) for colors, spacing, and typography
+- Implement mobile-first responsive design with `@media` queries
+- Prefer CSS Grid and Flexbox for layouts
+- Use modern CSS features: `:is()`, `:where()`, `:has()`, `clamp()`, `min()`, `max()`
+- Respect user preferences with `@media (prefers-reduced-motion)` and `@media (prefers-color-scheme)`
+- Keep specificity low; avoid `!important` unless absolutely necessary
+- Organize CSS logically: reset → variables → base → layout → components → utilities
+
+**JavaScript Standards:**
+- Use `const` and `let`; never use `var`
+- Prefer arrow functions and template literals
+- Use `async/await` for asynchronous operations
+- Implement event delegation for dynamic content
+- Use `debounce` for search inputs and `throttle` for scroll events
+- Leverage modern APIs: Fetch, IntersectionObserver, ResizeObserver
+- Use ES modules (`import`/`export`) when appropriate
+
+**Performance Requirements:**
+- Optimize images (WebP format with fallbacks, lazy loading, responsive images with `srcset`)
+- Minimize CSS and JavaScript files for production
+- Use semantic HTML to reduce DOM complexity
+- Implement critical CSS inline for above-the-fold content
+- Defer non-critical JavaScript with `defer` or `async` attributes
+- Target metrics: LCP < 2.5s, FID < 100ms, CLS < 0.1
+
+**Accessibility Standards:**
+- Follow WCAG 2.2 Level AA guidelines
+- Ensure keyboard navigation works for all interactive elements
+- Provide sufficient color contrast (4.5:1 for normal text, 3:1 for large text)
+- Test with screen readers (NVDA on Windows, VoiceOver on Mac)
+- Use ARIA attributes only when semantic HTML is insufficient
+- Ensure focus indicators are visible
+
+**File Structure:**
+```
+project/
+├── index.html
+├── css/
+│   ├── reset.css
+│   ├── variables.css
+│   ├── main.css
+│   └── responsive.css
+├── js/
+│   ├── main.js
+│   └── utils.js
+├── images/
+└── assets/
+```
+
+**When to Use This Approach:**
+- Landing pages, portfolios, documentation sites
+- Marketing websites with minimal interactivity
+- Prototypes and MVPs
+- Projects where simplicity and performance are priorities
+- When avoiding build complexity is desired
+
+**When NOT to Use:**
+- Complex web applications requiring state management
+- Projects needing component reusability across multiple pages
+- Applications with real-time data synchronization
+- Large-scale projects with multiple developers (consider frameworks instead)
+
 ## 17. Product Lifecycle
 - Idea → Validation → MVP → Production → Scale
 
@@ -112,3 +192,4 @@ Each phase is gated by a **Task** in the internal task list; no later phase star
 - [ ] Follow the SDD phases, creating a task for each.
 - [ ] Verify all images comply with licensing requirements.
 - [ ] Review and sign-off this Constitution by the Steering Committee.
+
